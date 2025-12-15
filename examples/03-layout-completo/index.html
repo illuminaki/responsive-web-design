@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Layout Completo Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">MiMarca</a>
+
+            <!-- Checkbox Hack para menú hamburguesa sin JS -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">☰</label>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Diseño Web Responsivo</h1>
+                <p>Aprende a crear sitios que se ven increíbles en cualquier dispositivo.</p>
+                <a href="#" class="btn">Empezar Ahora</a>
+            </div>
+        </section>
+
+        <section class="features container">
+            <div class="feature-card">
+                <h3>Mobile First</h3>
+                <p>Diseña pensando primero en la experiencia móvil para optimizar rendimiento y usabilidad.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Flexbox</h3>
+                <p>Alinea tus componentes de manera flexible y eficiente en una sola dimensión.</p>
+            </div>
+            <div class="feature-card">
+                <h3>CSS Grid</h3>
+                <p>Crea layouts complejos de dos dimensiones con pocas líneas de código.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Imágenes Fluidas</h3>
+                <p>Asegura que tus medios visuales nunca rompan el diseño de tu página.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Curso RWD. Hecho con ❤️ y CSS.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

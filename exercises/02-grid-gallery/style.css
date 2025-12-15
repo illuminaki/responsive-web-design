@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    background-color: #222;
+    color: white;
+}
+
+.item {
+    background-color: #444;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+/* --- TU CÓDIGO EMPIEZA AQUÍ --- */
+
+.gallery {
+    /* 
+       RETO: Crea una grilla que cree columnas automáticamente.
+       - Mínimo ancho de columna: 200px.
+       - Máximo: 1fr (lo que sobre).
+       - Espacio entre celdas (gap): 1rem.
+       
+       PISTA: Usa repeat(auto-fit, minmax(..., ...))
+       NO USES MEDIA QUERIES.
+    */
+}

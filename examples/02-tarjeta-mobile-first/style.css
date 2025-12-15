@@ -1,0 +1,123 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* 
+   MOBILE FIRST: Estilos base para la tarjeta (Vista vertical)
+*/
+.card {
+    background: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    /* En móvil no queremos que se estire demasiado */
+    display: flex;
+    flex-direction: column;
+    /* Apilado verticalmente */
+}
+
+.card-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.tag {
+    background-color: #fee2e2;
+    color: #991b1b;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    color: #6b7280;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #111827;
+}
+
+button {
+    background-color: #111827;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #374151;
+}
+
+/* 
+   DESKTOP: A partir de 768px, cambiamos el layout
+*/
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        /* Cambiamos a horizontal */
+        max-width: 800px;
+        /* Permitimos que sea más ancha */
+    }
+
+    .card-image {
+        flex: 1;
+        /* Toma el 50% del espacio */
+    }
+
+    .card-image img {
+        height: 100%;
+        /* Ocupa toda la altura disponible */
+    }
+
+    .card-content {
+        flex: 1;
+        /* Toma el otro 50% */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Centra el contenido verticalmente */
+    }
+}
